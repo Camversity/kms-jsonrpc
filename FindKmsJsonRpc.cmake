@@ -5,7 +5,7 @@
 #
 #=============================================================================
 
-set(PACKAGE_VERSION "@PROJECT_VERSION@")
+set(PACKAGE_VERSION "7.0.0~5.g791061f")
 set(KmsJsonRpc_VERSION ${PACKAGE_VERSION})
 
 find_package(PkgConfig)

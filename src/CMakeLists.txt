@@ -37,6 +37,13 @@ target_link_libraries(jsonrpc
 
 set_target_properties(jsonrpc PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
 
+set(KmsJsonRpc_INCLUDE_DIRS
+        ${JSONCPP_INCLUDE_DIRS}
+        ${Boost_INCLUDE_DIRS}
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/jsonrpc
+        CACHE INTERNAL "${PROJECT_NAME}: Include Directories" FORCE)
+
 install(
   TARGETS jsonrpc
   RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}

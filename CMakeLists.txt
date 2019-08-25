@@ -22,7 +22,7 @@ common_buildflags_set()
 #common_buildflags_print()
 
 find_package(PkgConfig)
-pkg_check_modules(JSONCPP REQUIRED kmsjsoncpp>=0.6.0)
+pkg_check_modules(JSONCPP REQUIRED jsoncpp>=0.6.0)
 
 find_package(Boost REQUIRED COMPONENTS unit_test_framework)
 
