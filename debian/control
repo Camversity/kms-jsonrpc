@@ -3,7 +3,7 @@ Priority: optional
 Maintainer: Kurento <kurento@googlegroups.com>
 Build-Depends: debhelper (>= 9),
  cmake,
- kmsjsoncpp-dev,
+ jsoncpp-dev,
  libboost-dev,
  libboost-test-dev,
  pkg-config
@@ -25,7 +25,7 @@ Package: kms-jsonrpc-dev
 Architecture: any
 Section: libdevel
 Depends: kms-jsonrpc (= ${binary:Version}),
- kmsjsoncpp-dev,
+ jsoncpp-dev,
  libboost-dev,
  libboost-test-dev
 Breaks: kms-jsonrpc-1.0-dev
